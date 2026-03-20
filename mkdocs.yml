@@ -1,0 +1,52 @@
+site_name: ПП.ПМ.05 Оформление игрового продукта
+
+use_directory_urls: false
+
+theme:
+  name: material
+  logo: assets/icons/logo.png
+  favicon: assets/icons/logo.png
+  language: ru
+  features:
+    - content.code.copy
+    - content.image.zoom
+    - navigation.top
+    - navigation.tracking
+    - toc.follow
+
+plugins:
+  - glightbox
+  - search
+
+nav:
+  - Главная: index.md
+  - Соотношение с ВКР: vkr.md
+  - Подготовительная работа: tasks/task0.md
+  - Задание 1. Художественный стиль и визуальная концепция: tasks/task1.md
+  - Задание 2. Технические задания для художника: tasks/task2.md
+  - Задание 3. Интерфейс и UX-сценарии: tasks/task3.md
+  - Задание 4. Вертикальный срез: tasks/task4.md
+  - Задание 5. Айдентика и брендинг: tasks/task5.md
+
+markdown_extensions:
+  - tables
+  - admonition
+  - attr_list
+  - pymdownx.highlight
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - md_in_html
+  - pymdownx.blocks.caption
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  - assets/js/mermaid-init.js
+
+extra_css:
+  - assets/stylesheets/extra.css
