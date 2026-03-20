@@ -1,0 +1,1147 @@
+<!DOCTYPE html><html lang="ru" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="task2.html">
+      
+      
+        <link rel="next" href="task4.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/icons/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Задание 3. Интерфейс и UX-сценарии - ПП.ПМ.05 Оформление игрового продукта</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#3-ux-" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href="../index.html" title="ПП.ПМ.05 Оформление игрового продукта" class="md-header__button md-logo" aria-label="ПП.ПМ.05 Оформление игрового продукта" data-md-component="logo">
+      
+  <img src="../assets/icons/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ПП.ПМ.05 Оформление игрового продукта
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Задание 3. Интерфейс и UX-сценарии
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="ПП.ПМ.05 Оформление игрового продукта" class="md-nav__button md-logo" aria-label="ПП.ПМ.05 Оформление игрового продукта" data-md-component="logo">
+      
+  <img src="../assets/icons/logo.png" alt="logo">
+
+    </a>
+    ПП.ПМ.05 Оформление игрового продукта
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Главная
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vkr.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Соотношение с ВКР
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="task0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Подготовительная работа
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="task1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Задание 1. Художественный стиль и визуальная концепция
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="task2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Задание 2. Технические задания для художника
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Задание 3. Интерфейс и UX-сценарии
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="task3.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Задание 3. Интерфейс и UX-сценарии
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Цель задания
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1. Архитектура экранов
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1. Архитектура экранов">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Схема навигации между экранами
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-ux-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2. UX-принципы вашей игры
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-ux-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3. UX-сценарии взаимодействия
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.3. UX-сценарии взаимодействия">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Как правильно описать сценарий
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Сценарий 1 (обязательный): Запуск игры и начало новой партии
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Сценарий 2 (обязательный): Взаимодействие с ключевым игровым объектом
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Сценарий 3 (по выбору): Дополнительное взаимодействие
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="task4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Задание 4. Вертикальный срез
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="task5.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Задание 5. Айдентика и брендинг
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Цель задания
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1. Архитектура экранов
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1. Архитектура экранов">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Схема навигации между экранами
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-ux-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2. UX-принципы вашей игры
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-ux-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3. UX-сценарии взаимодействия
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.3. UX-сценарии взаимодействия">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Как правильно описать сценарий
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Сценарий 1 (обязательный): Запуск игры и начало новой партии
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Сценарий 2 (обязательный): Взаимодействие с ключевым игровым объектом
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Сценарий 3 (по выбору): Дополнительное взаимодействие
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="3-ux-">Задание 3. Интерфейс и UX-сценарии взаимодействия</h1>
+<blockquote>
+<p>Внимание! Данное задание выполняется на основе <strong>вашего</strong> игрового проекта.</p>
+</blockquote>
+<hr>
+<h2 id="_1">Цель задания</h2>
+<p>Спроектировать полную архитектуру пользовательского интерфейса игры и детализировать сценарии взаимодействия игрока с системой.</p>
+<blockquote>
+<p>Хороший интерфейс — невидимый. Игрок не думает о кнопках, он думает об игре. Ваша задача — спроектировать интерфейс так, чтобы он не мешал, а помогал: понятные кнопки, предсказуемые переходы, чёткая обратная связь на каждое действие.</p>
+</blockquote>
+<hr>
+<h2 id="31">3.1. Архитектура экранов</h2>
+<p>Перечислите все экраны вашей игры. Для каждого укажите назначение и навигационные связи.</p>
+<table>
+<thead>
+<tr>
+<th>Экран</th>
+<th>Назначение</th>
+<th style="text-align: center;">Откуда попадают</th>
+<th style="text-align: center;">Куда ведёт</th>
+<th style="text-align: center;">Компоненты Unity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Экран загрузки (Splash)</td>
+<td>Запуск, загрузка ресурсов</td>
+<td style="text-align: center;">Запуск игры</td>
+<td style="text-align: center;">Главное меню</td>
+<td style="text-align: center;">SceneManager, LoadingBar</td>
+</tr>
+<tr>
+<td>Главное меню</td>
+<td>Точка входа: новая игра, продолжение, настройки, выход</td>
+<td style="text-align: center;">Экран загрузки</td>
+<td style="text-align: center;">Новая игра / Продолжить → Геймплей; Настройки → Экран настроек</td>
+<td style="text-align: center;">Canvas, Button, MainMenuController</td>
+</tr>
+<tr>
+<td>Выбор персонажа / уровня</td>
+<td>Отображение сохранённых слотов, краткая статистика прогресса</td>
+<td style="text-align: center;">Главное меню (кнопка «Продолжить»)</td>
+<td style="text-align: center;">Игровой процесс (загрузка выбранного слота)</td>
+<td style="text-align: center;">SaveSystem, SlotUI, SceneManager</td>
+</tr>
+<tr>
+<td>Игровой процесс (геймплей)</td>
+<td>Основная сцена: движение, бой, сбор рун, диалоги</td>
+<td style="text-align: center;">Главное меню / Экран смерти</td>
+<td style="text-align: center;">Пауза / Диалог / Инвентарь / Экран смерти / Экран победы</td>
+<td style="text-align: center;">PlayerController, HUDManager, SceneManager</td>
+</tr>
+<tr>
+<td>Меню паузы</td>
+<td>Временная остановка: продолжить, настройки, выйти в меню</td>
+<td style="text-align: center;">Геймплей (Escape / Start)</td>
+<td style="text-align: center;">Геймплей (продолжить) / Настройки / Главное меню</td>
+<td style="text-align: center;">PauseMenu, Time.timeScale = 0</td>
+</tr>
+<tr>
+<td>Настройки</td>
+<td>Регулировка звука, разрешения, управления</td>
+<td style="text-align: center;">Главное меню или Пауза</td>
+<td style="text-align: center;">Обратно в вызвавший экран</td>
+<td style="text-align: center;">SettingsManager, PlayerPrefs, Slider, Toggle</td>
+</tr>
+<tr>
+<td>Диалог / взаимодействие с NPC</td>
+<td>Диалоговое окно с Мерлином или другим NPC; подсказки и квесты</td>
+<td style="text-align: center;">Геймплей (вход в зону триггера NPC)</td>
+<td style="text-align: center;">Геймплей (закрытие диалога)</td>
+<td style="text-align: center;">DialogueManager, TriggerZone, TextMeshPro</td>
+</tr>
+<tr>
+<td>Инвентарь / карта / журнал</td>
+<td>Просмотр собранных рун Экскалибура, карты локации, записей</td>
+<td style="text-align: center;">Геймплей (клавиша I / Tab)</td>
+<td style="text-align: center;">Геймплей (закрытие панели)</td>
+<td style="text-align: center;">InventoryUI, MapRenderer, JournalController</td>
+</tr>
+<tr>
+<td>Экран завершения уровня / смерти</td>
+<td>Сообщение о гибели, статистика попытки, кнопки повтора/меню</td>
+<td style="text-align: center;">Геймплей (HP = 0)</td>
+<td style="text-align: center;">Геймплей (повторить) / Главное меню</td>
+<td style="text-align: center;">DeathScreen, SceneManager, StatTracker</td>
+</tr>
+<tr>
+<td>Экран финала / победы</td>
+<td>Финальная заставка: возвращение Экскалибура, титры, результат</td>
+<td style="text-align: center;">Геймплей (победа над Морганой)</td>
+<td style="text-align: center;">Главное меню</td>
+<td style="text-align: center;">WinScreen, Animator, Credits</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_2">Схема навигации между экранами</h3>
+<figure>
+<pre class="mermaid"><code>flowchart TD
+    SPLASH[Экран загрузки\nSplash Screen] --&gt; MENU[Главное меню]
+    MENU --&gt; NEW[Новая игра]
+    MENU --&gt; CONTINUE[Продолжить]
+    MENU --&gt; SETTINGS[Настройки]
+    MENU --&gt; EXIT[Выход]
+    NEW --&gt; GAME[Игровой процесс]
+    CONTINUE --&gt; GAME
+    GAME --&gt; PAUSE[Пауза]
+    PAUSE --&gt; GAME
+    PAUSE --&gt; MENU
+    GAME --&gt; DEATH[Экран смерти / завершения]
+    DEATH --&gt; GAME
+    DEATH --&gt; MENU
+    GAME --&gt; WIN[Экран победы / финала]
+    WIN --&gt; MENU</code></pre>
+<figcaption>
+<p>Рисунок 1 – Схема навигации между экранами (адаптируйте под свою игру)</p>
+</figcaption>
+</figure>
+<blockquote>
+<p><strong>Важно.</strong> Схема выше является шаблонной. Замените её схемой, отражающей реальную навигацию вашей игры, включая нестандартные переходы (например: смерть во время диалога, возврат из инвентаря и т.п.).</p>
+</blockquote>
+<p><strong>Описание логики навигации</strong> (нестандартные ситуации):</p>
+<p>Если игрок погибает во время диалога с Мерлином, диалог принудительно закрывается и немедленно активируется экран смерти (DialogueManager вызывает событие <code>OnPlayerDeath</code>, обработчик <code>DeathScreen</code> открывается поверх). Из меню паузы можно перейти в Настройки — при возврате игра возобновляется автоматически без дополнительного нажатия «Продолжить». Инвентарь недоступен во время диалога и во время катсцены: кнопка I блокируется флагом <code>inputLocked</code>. Смерть во время загрузки новой сцены (переход между локациями) откатывает загрузку и возвращает на экран смерти предыдущей сцены через <code>SceneManager.LoadScene</code> с сохранённым checkpoint.</p>
+<hr>
+<h2 id="32-ux-">3.2. UX-принципы вашей игры</h2>
+<p>UX-принципы — правила, которым вы следуете при проектировании каждого экрана. Они обеспечивают единство опыта во всей игре.</p>
+<table>
+<thead>
+<tr>
+<th>UX-принцип</th>
+<th>Что означает</th>
+<th>Как реализован в вашей игре</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Минимизация когнитивной нагрузки</strong></td>
+<td>Не заставляйте игрока запоминать — выводите нужную информацию на экран</td>
+<td>HUD показывает HP-сердца и счётчик рун Экскалибура постоянно. Подсказка «E — взаимодействие» появляется автоматически при приближении к NPC или объекту — игроку не нужно помнить кнопку</td>
+</tr>
+<tr>
+<td><strong>Чёткая визуальная иерархия</strong></td>
+<td>Самое важное — крупнее и контрастнее; второстепенное — мельче и тише</td>
+<td>HP-сердца — крупные, верхний левый угол, цвет #FF3333. Счётчик рун — меньше, правый верхний. Stamina-бар — тонкая полоска в нижнем центре, полупрозрачная в покое и яркая при использовании</td>
+</tr>
+<tr>
+<td><strong>Своевременная обратная связь</strong></td>
+<td>На каждое действие — немедленная и однозначная реакция</td>
+<td>Удар мечом: вспышка частиц + звук за 1 кадр. Сбор руны: анимация «всасывания» + звон + счётчик +1 за 0.1 с. Получение урона: экран мигает красным (Vignette Bloom) + сердце пропадает</td>
+</tr>
+<tr>
+<td><strong>Предсказуемость поведения</strong></td>
+<td>Одинаково выглядящие элементы работают одинаково во всей игре</td>
+<td>Все интерактивные объекты подсвечиваются зелёным (#50C878) при приближении — руны, NPC, точки сохранения. Игрок видит один паттерн и применяет его везде</td>
+</tr>
+<tr>
+<td><strong>Консистентность стиля</strong></td>
+<td>Единый шрифт, палитра, размеры элементов на всех экранах</td>
+<td>Шрифт MedievalSharp для заголовков, Cinzel для текста — на всех экранах. Золотые рамки (#D4AF37) — на всех UI-панелях. Кнопки одного размера 200×50 px на главном меню и паузе</td>
+</tr>
+<tr>
+<td><strong>Минимальное количество кликов</strong></td>
+<td>Частые действия доступны за 1–2 нажатия</td>
+<td>Пауза — Escape (1 нажатие). Продолжить из паузы — Enter (1 нажатие). Инвентарь — Tab (1 нажатие). Повторить уровень после смерти — R (1 нажатие)</td>
+</tr>
+<tr>
+<td><strong>Чёткое разделение состояний</strong></td>
+<td>Игрок всегда понимает, в каком состоянии находится объект</td>
+<td>Руна: ненайдена — серый силуэт; найдена — золотая иконка с блеском; активирована — синее свечение. Кнопки меню: normal — золотая рамка; hover — рамка ярче, scale ×1.05; disabled — серая рамка, 50% прозрачность</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="33-ux-">3.3. UX-сценарии взаимодействия</h2>
+<p><strong>UX-сценарий (User Flow)</strong> — пошаговое описание того, что происходит в системе, когда игрок выполняет определённое действие.</p>
+<h3 id="_3">Как правильно описать сценарий</h3>
+<ul>
+<li>Каждый шаг: <strong>действие игрока → реакция системы → изменение состояния</strong>.</li>
+<li>Обязательно укажите <strong>альтернативный путь</strong> (ошибка, отмена, повтор).</li>
+<li>Укажите <strong>компоненты Unity</strong>, отвечающие за каждый шаг.</li>
+</ul>
+<hr>
+<h3 id="1">Сценарий 1 (обязательный): Запуск игры и начало новой партии</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">№</th>
+<th>Действие игрока</th>
+<th>Реакция системы</th>
+<th style="text-align: center;">Изменение состояния</th>
+<th style="text-align: center;">Компонент Unity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td>Запускает приложение</td>
+<td>Отображается экран загрузки: логотип, прогресс-бар</td>
+<td style="text-align: center;">LOADING</td>
+<td style="text-align: center;">SceneManager, LoadingBar</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td>Ожидает загрузки</td>
+<td>Загружаются ресурсы главного меню, fade-in</td>
+<td style="text-align: center;">READY</td>
+<td style="text-align: center;">AsyncOperation, Animator</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td>Нажимает «Новая игра»</td>
+<td>Появляется экран выбора слота сохранения (3 слота); незанятые слоты помечены «Пусто»</td>
+<td style="text-align: center;">SLOT_SELECT</td>
+<td style="text-align: center;">MainMenuController, SaveSystem, SlotUI</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td>Выбирает пустой слот</td>
+<td>Слот подсвечивается золотым, появляется кнопка «Начать приключение»</td>
+<td style="text-align: center;">SLOT_CHOSEN</td>
+<td style="text-align: center;">SlotUI, Button</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td>Нажимает «Начать приключение»</td>
+<td>Запускается AsyncOperation загрузки сцены «Руины Камелота»; появляется экран fade-to-black с логотипом</td>
+<td style="text-align: center;">LOADING_GAME</td>
+<td style="text-align: center;">SceneManager.LoadSceneAsync, Animator</td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td>Игра начинается</td>
+<td>Появляется заставка: силуэт Камелота, первые строки нарратива Мерлина; управление передаётся игроку</td>
+<td style="text-align: center;">IN_GAME</td>
+<td style="text-align: center;">CutsceneManager, DialogueManager, PlayerController</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Альтернатива:</strong> Игрок нажимает «Отмена» → возврат в главное меню.</p>
+<hr>
+<h3 id="2">Сценарий 2 (обязательный): Взаимодействие с ключевым игровым объектом</h3>
+<p>Опишите сценарий с самым важным интерактивным объектом вашей игры (NPC-диалог, сундук, механизм, загадка и т.п.).</p>
+<p><strong>Объект и его роль:</strong> Мерлин — NPC-наставник; даёт квесты, подсказки и открывает способности Артура при сборе рун</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">№</th>
+<th>Действие игрока</th>
+<th>Реакция системы</th>
+<th style="text-align: center;">Изменение состояния</th>
+<th style="text-align: center;">Компонент Unity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td>Подходит к Мерлину</td>
+<td>Над NPC появляется иконка «!» (зелёная), подсказка «E — говорить»</td>
+<td style="text-align: center;">IDLE → NEAR_NPC</td>
+<td style="text-align: center;">TriggerZone (OnTriggerEnter2D), DialoguePromptUI</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td>Нажимает E</td>
+<td>Геймплей приостанавливается (inputLocked = true); появляется диалоговое окно с портретом Мерлина и первой репликой</td>
+<td style="text-align: center;">DIALOGUE_OPEN</td>
+<td style="text-align: center;">DialogueManager, TextMeshPro, Animator (portrait)</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td>Нажимает E / Space (продолжить)</td>
+<td>Следующая реплика появляется посимвольно (typewriter-эффект)</td>
+<td style="text-align: center;">DIALOGUE_NEXT</td>
+<td style="text-align: center;">DialogueManager.ShowNextLine(), Coroutine</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td>Достигает реплики с выбором</td>
+<td>Появляются 2–3 варианта ответа, подсвечен первый</td>
+<td style="text-align: center;">DIALOGUE_CHOICE</td>
+<td style="text-align: center;">ChoiceUI, Button, EventSystem</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td>Выбирает вариант ответа</td>
+<td>Ветка диалога продолжается; если выбрана нужная руна — открывается способность (всплывающий тост «Новая способность: Щит Камелота!»)</td>
+<td style="text-align: center;">ABILITY_UNLOCKED</td>
+<td style="text-align: center;">DialogueManager, AbilitySystem, ToastNotification</td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td>Завершает диалог (последняя реплика)</td>
+<td>Окно закрывается, inputLocked = false; иконка «!» над Мерлином меняется на «✓» (серая) — диалог просмотрен</td>
+<td style="text-align: center;">IDLE</td>
+<td style="text-align: center;">DialogueManager.CloseDialogue(), TriggerZone</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Альтернатива (ошибка / невозможность действия):</strong> Если игрок нажимает Escape во время диалога — диалог прерывается, inputLocked = false, прогресс ветки сохраняется (запомнен индекс последней реплики); следующий разговор возобновится с того же места.</p>
+<hr>
+<h3 id="3">Сценарий 3 (по выбору): Дополнительное взаимодействие</h3>
+<p>Выберите ещё один важный сценарий (инвентарь, покупка, завершение уровня, смерть и респаун и т.п.).</p>
+<p><strong>Название сценария:</strong> Сбор осколка Экскалибура и разблокировка новой способности</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">№</th>
+<th>Действие игрока</th>
+<th>Реакция системы</th>
+<th style="text-align: center;">Изменение состояния</th>
+<th style="text-align: center;">Компонент Unity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td>Подходит к светящемуся осколку на полу</td>
+<td>Осколок начинает вращаться быстрее, усиливается Point Light (золотое свечение), всплывает подсказка «E — подобрать»</td>
+<td style="text-align: center;">NEAR_SHARD</td>
+<td style="text-align: center;">TriggerZone, Point Light 2D, ShardPromptUI</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td>Нажимает E</td>
+<td>Анимация «всасывания»: осколок летит к Артуру, вспышка частиц, звон; объект осколка деактивируется</td>
+<td style="text-align: center;">COLLECTING</td>
+<td style="text-align: center;">ShardPickup.Collect(), ParticleSystem, AudioSource</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td>Осколок подобран</td>
+<td>Счётчик рун в HUD обновляется: X/5 → (X+1)/5 с анимацией +1 поверх иконки</td>
+<td style="text-align: center;">SHARD_ADDED</td>
+<td style="text-align: center;">HUDManager.UpdateShardCount(), Animator</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td>(Автоматически) Проверка условия способности</td>
+<td>Если собрано нужное количество рун (например, 3/5) — появляется полноэкранная вспышка + тост «Новая способность разблокирована: Удар молнии!»</td>
+<td style="text-align: center;">ABILITY_UNLOCKED</td>
+<td style="text-align: center;">AbilitySystem.CheckUnlock(), ToastNotification, Animator</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td>Нажимает F (посмотреть способность)</td>
+<td>Открывается мини-панель способности: иконка, описание, кнопка управления; пауза не активируется, геймплей продолжается</td>
+<td style="text-align: center;">ABILITY_PANEL_OPEN</td>
+<td style="text-align: center;">AbilityPanelUI, InputManager</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Альтернатива:</strong> Если осколок уже был собран ранее (флаг <code>collected = true</code>), объект не активен на сцене — игрок просто проходит мимо без триггера. Если инвентарь заполнен (нештатная ситуация) — всплывает предупреждение «Инвентарь полон», осколок остаётся на месте, не исчезает.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  К началу
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.image.zoom", "navigation.top", "navigation.tracking", "toc.follow"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../assets/js/mermaid-init.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
